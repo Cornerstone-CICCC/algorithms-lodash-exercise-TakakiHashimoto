@@ -5,5 +5,8 @@ const _ = require('lodash');
 const numbers = [1, 2, 3, 4];
 
 // your code here
+const product = _.reduce(numbers, (acc, cur) => {
+    return acc * cur;
+}, 1)
 
 console.log(product); // Expected output: 24
